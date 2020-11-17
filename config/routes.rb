@@ -2,16 +2,13 @@ Rails.application.routes.draw do
   devise_for :users,
     controllers: { registrations: 'registrations' }
 
-  root 'pages#home'
+  root 'posts#index'
 
   get '/users/:id', to: 'users#show', as: 'user'
 
-  # ==========ここから編集する==========
-  resources :posts, only: %i(new create) do
+  # この行を編集する
+  resources :posts, only: %i(index new create show) do
     resources :photos, only: %i(create)
   end
-  # ==========ここまで編集する==========
-
 end
-
 
