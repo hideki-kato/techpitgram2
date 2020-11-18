@@ -7,13 +7,11 @@
       <div class="row">
         <h1><%= @user.name %></h1>
 
-        <%# ===この行を追加する=== %>
         <% if @user == current_user %>
 
           <%= link_to "プロフィールを編集", edit_user_registration_path, class: "btn btn-outline-dark edit-profile-btn" %>
           <button type="button" class="setting" data-toggle="modal" data-target="#exampleModal"></button>
 
-        <%# ===この行を追加する=== %>
         <% end %>
 
 
