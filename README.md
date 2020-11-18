@@ -4,7 +4,7 @@
 - Instagramのように誰でも写真を投稿して会話しながら楽しめるアプリです。
 
 ## URL
-- 【https://tcstagram.herokuapp.com/】
+- 【https://salty-chamber-44498.herokuapp.com】
 - テストユーザーアカウント
 * test@test
 - パスワード
